@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ICAD</title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+    <header>
+        <nav class="navegacao">
+            <ul class="Menu">
+                <li>
+                    <a href="#Sobre" class="menu-link">A Igreja</a>
+                </li>
+                <li>
+                    <a href="#Cultos" class="menu-link">Cultos</a>
+                </li>
+                <li>
+                    <a href="#Eventos" class="menu-link">Eventos</a>
+                </li>
+                <li>
+                    <a href="#Contribua" class="menu-link">Contribua</a>
+                </li>
+                <li>
+                    <a href="#Contatos" class="menu-link">Contatos</a>
+                </li>
+            </ul>
+        
+            
+        </nav>
+
+        <div class="Menu-mobile">
+            <div class="btn-fechar">
+                <i class="bi bi-x-lg"></i>
+            </div>
+
+            <nav class="navegacao">
+                <ul class="Menu">
+                    <li>
+                        <a href="#Sobre" class="menu-link">A Igreja</a>
+                    </li>
+                    <li>
+                        <a href="#Cultos" class="menu-link">Cultos</a>
+                    </li>
+                    <li>
+                        <a href="#Eventos" class="menu-link">Eventos</a>
+                    </li>
+                    <li>
+                        <a href="#Contribua" class="menu-link">Contribua</a>
+                    </li>
+                    <li>
+                        <a href="#Contatos" class="menu-link">Contatos</a>
+                    </li>
+                </ul>
+            
+                
+            </nav>
+        </div>
+    </header>
+
+    <main id="inicio" class="cabecalho">
+        <img src="images/projeto.logo.png" alt="foto de logo" class="foto-perfil">
+        <h1>icad | igreja evangélica</h1>
+
+    </main>
+
+    <section id="Sobre" class="Sobre">
+        <h2 class="sobre-titulo">Sobre Nós</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+
+                A ICAD (Igreja Cristã Assembleia de Deus) ministério Missão nasceu de um propósito maior: glorificar a Deus, pregar o evangelho de Jesus Cristo e servir à comunidade com amor e dedicação. Sua jornada teve início em 23 de janeiro de 2010, na Rua Benedito dos Santos, 394, no bairro de Jundiapeba, em Mogi das Cruzes – SP.
+                
+                Fundada pelo pastor José Cassiano dos Santos (in memoriam) e Miss. Luziaria Joaquina a igreja começou como um pequeno grupo de fiéis movidos pelo desejo de adorar a Deus e levar esperança àqueles que mais precisavam. Desde o princípio, além dos cultos e da pregação do evangelho, havia um forte compromisso com o acolhimento espiritual e psicológico de famílias em situação de vulnerabilidade.
+                
+                Com o passar do tempo, a obra cresceu e tornou-se necessário um espaço maior para acomodar os novos membros e expandir o alcance da missão. Foi assim que, guiada pela fé e pela visão de seu fundador, a igreja se estabeleceu em um novo endereço, na Rua Dr. Francisco Soares Marialva, 1250, também em Jundiapeba, Mogi das Cruzes – SP.
+                
+                Atualmente, a Igreja Cristã Assembleia de Deus Missão continua sua caminhada sob a liderança dos pastores Alexsandro Cassiano dos Santos e Flávia Trisch Schneider Santos. Mais do que um templo físico, a igreja se tornou um lugar de encontro com Deus, transformação de vidas e fortalecimento da fé, mantendo viva a essência de sua fundação: proclamar o evangelho e servir ao próximo com amor e dedicação.</p>
+        </div>
+    </section>
+
+    <section id="Cultos" class="Cultos">
+        <h2 class="cultos-titulo">Cultos</h2>
+        <div class="Cultos-caixa">
+            <div class="Cultos-Card">
+                <img src="images/quinta.culto.png" alt="Cultos-imagem">
+                <div class="caixa-texto-paragrafo">
+                    <h3 class="info-Cultos">Cultos</h3>
+                    <p class="paragrafo-Cultos">Quinta-Feira 20:00hrs</p>
+                </div>
+            </div>
+
+            <div class="Cultos-Card">
+                <img src="images/domingo.culto.png" alt="Cultos-imagem">
+                <div class="caixa-texto-paragrafo">
+                    <h3 class="info-Cultos">Cultos</h3>
+                    <p class="paragrafo-Cultos">Domingo 18:30hrs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Eventos" class="Eventos">
+        <h2 class="Eventos-titulo">Eventos</h2>
+        <div class="Eventos-caixa">
+            <div class="Eventos-Card">
+                <img src="images/Congresso.culto.png" alt="Eventos-imagem">
+                <div class="caixa-texto-paragrafo">
+                    <h3 class="info-eventos">Congresso Dos Jovens</h3>
+                    <p class="paragrafo-eventos"> O nosso congresso de jovens está chegando e você não pode ficar de
+                        fora !
+                        Nos dias 01, 02, 03 de março (sábado, domingo e segunda)</p>
+                </div>
+            </div>
+
+            <div class="Eventos-caixa">
+                <div class="Eventos-Card">
+                    <img src="images/Eventos.culto.png" alt="Eventos-imagem">
+                    <div class="caixa-texto-paragrafo">
+                        <h3 class="info-eventos">Santa Ceia</h3>
+                        <p class="paragrafo-eventos">SABÁDO DIA 08/03 TEMOS NOSSO CULTO DE CEIA !!</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="Contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="Nome">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite Sua Mensagem" rows="6" id="Mensagem"></textarea>
+            </div>
+            <button type="submit" class="botao-form">Enviar Whatsapp</button>
+        </form>
+    </section>
+
+    <script>
+
+        function enviarWhats(event) {
+            event.preventDefault()
+
+            const Nome = document.getElementById('Nome').value;
+            const Mensagem = document.getElementById('Mensagem').value;
+            const telefone = '5511946345557';
+
+            const texto = `Olá! Me Chamo ${Nome}, ${Mensagem}`
+            const msgFormatada = encodeURIComponent(texto)
+
+            const url = `https://wa.me/${telefone}?text=${msgFormatada} `
+
+            console.log(url)
+
+            window.open(url, '_blank')
+        }
+
+
+    </script>
+
+</body>
+
+</html>
